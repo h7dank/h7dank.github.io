@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<style>
+			body, ul, li{
+				margin: 0;
+				padding: 0;
+			}
+			.clear{
+				zoom: 1;
+			}
+			.clear:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.content{
+				width: 980px;
+				overflow: hidden;
+				margin: 0 auto;
+				position: relative;
+			}
+			.content ul{
+				height: 400px;
+				position: relative;
+			}
+			.content li{
+				position: absolute;
+				list-style: none;
+			}
+			.ad{
+				width: 615px;
+				overflow: hidden;
+				position: relative;
+				margin: 0 auto;
+			}
+			.ad ul{
+				width: 1230px;
+				height: 150px;
+				position: relative;
+				left: 0;
+			}
+			.ad li{
+				width: 205px;
+				list-style: none;
+				float: left;
+			}
+			.ad a{
+				width: 145px;
+				margin: 0 auto;
+			}
+			
+		</style>
+		<script>
+			var test = {};
+			test.app = {};
+			test.ui = {};
+			test.tool = {};
+			test.tool.getStyle = function(obj, attr){
+				if(obj.currentStyle){
+					return obj.currentStyle[attr];
+				} else {
+					return getComputedStyle(obj, false)[attr];
+				}
+			}
+			test.ui.fadeIn = function(obj){
+				var op = test.tool.getStyle(obj, 'opacity');
+				if(op == 1){return false;}
+				var value = 0;
+				clearInterval(obj.timer);
+				var speed = 5;
+				obj.timer = setInterval(function(){	
+					if(value == 100){
+						clearInterval(obj.timer);
+					} else{
+						value += speed;
+						obj.style.opacity = value/100;
+						obj.style.filter = 'alpha(opacity = ' + value+')';
+					}
+					
+				}, 20);
+			}
+			test.ui.fadeOut = function(obj){
+				var op = test.tool.getStyle(obj, 'opacity');
+				if(op == 0){return false;}
+				var value = 100;
+				clearInterval(obj.timer);
+				var speed = 5;
+				obj.timer = setInterval(function(){	
+					if(value == 0){
+						clearInterval(obj.timer);
+					} else {
+						value -= speed;
+						obj.style.opacity = value/100;
+						obj.style.filter = 'alpha(opacity = ' + value+')';
+					}
+					
+				}, 20);
+			}
+			test.app.toBanner = function(){
+				var liList = document.getElementsByClassName('content')[0].getElementsByTagName('li');
+				var isNow = 0;
+				var len = liList.length;
+				var timer = setInterval(auto, 2000);
+				function auto(){
+					isNow = (isNow == len-1) ? 0 : isNow+=1; 
+					for(var i = 0; i < len; i++){
+						test.ui.fadeIn(liList[i]);
+					}
+					test.ui.fadeOut(liList[isNow]);
+					
+				}
+			}
+			
+			test.ui.moveLeft = function(obj, old, now){
+	
+				clearInterval(obj.timer);
+				obj.timer = setInterval(function(){
+					var iSpeed = (now - old)/100;
+					iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+					
+					if(now == old){
+						clearInterval(obj.timer);
+					}
+					else{
+						old += iSpeed;
+						obj.style.left = old + 'px';
+					}
+					
+				},50);
+				
+	
+			};
+			
+			test.app.toScroll = function(){
+				var aUl = document.getElementsByClassName('ad')[0].getElementsByTagName('ul')[0];
+				var isNow = 0;
+				var liArr = aUl.getElementsByTagName('li');
+				
+				
+					/*if(isNow == 0){	
+						isNow = liArr.length/2;
+						aUl.style.left = -aUl.offsetWidth/2 + "px";
+					}*/
+				test.ui.moveLeft(aUl, -isNow*liArr[0].offsetWidth, -(isNow+1)*liArr[0].offsetWidth);
+				
+				/*aUl.timer = setInterval(function(){
+					console.log(isNow);
+					
+					if(isNow == 0){	
+						isNow = liArr.length/2;
+						aUl.style.left = -aUl.offsetWidth/2 + "px";
+					}
+					test.ui.moveLeft(aUl, -isNow*liArr[0].offsetWidth, -(isNow-1)*liArr[0].offsetWidth);
+					isNow--;
+					
+				}, 1000);*/
+				
+				
+			}
+			
+			
+			window.onload = function(){
+				
+				test.app.toScroll();
+			};
+		</script>
+	</head>
+	<body>
+		<div class = "content">
+			<ul class = "clear">
+				<li class = "active"><a href = ""><img src = "./image/banner/1.png" alt = "1" /></a></li>
+				<li class = "hide"><a href = ""><img src = "./image/banner/2.png" alt = "2" /></a></li>
+				<li class = "hide"><a href = ""><img src = "./image/banner/3.png" alt = "3" /></a></li>
+			</ul>
+		</div>
+		<div class = "ad">
+			<ul class = "clear">
+				<li><a><img src = "./image/scroll_pic/1.jpg" /></a></li>
+				<li><a><img src = "./image/scroll_pic/2.jpg" /></a></li>
+				<li><a><img src = "./image/scroll_pic/3.jpg" /></a></li>
+				<li><a><img src = "./image/scroll_pic/3.jpg" /></a></li>
+				<li><a><img src = "./image/scroll_pic/2.jpg" /></a></li>
+				<li><a><img src = "./image/scroll_pic/1.jpg" /></a></li>
+			</ul>
+		</div>
+	</body>
+</html>
