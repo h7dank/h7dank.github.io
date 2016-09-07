@@ -1,0 +1,228 @@
+body, div , section{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	font-family: 'Microsoft YaHei';
+	width: 100%;
+	height: 100%;
+}
+
+section{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.bg-color{
+	background-color: #2d4081;
+}
+.bg-page1{
+	width: 429px;
+	height: 429px;
+	background-color: #233364;
+	border: 1px solid #1f2b57;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -214px;
+	margin-top: -214px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 113px #283972, 
+				0px 0px 0px 114px #223164, 
+				0px 0px 0px 193px #293c79,
+				0px 0px 0px 194px #273971, 
+				0px 0px 0px 254px #2c3f7e, 
+				0px 0px 0px 255px #2a3c79; 
+}
+.bg-star{
+	width: 100%;
+	height: 100%;
+	background: url(../img/star.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+.main-page1{
+	width: 429px;
+	height: 429px;
+	margin: -214px 0px 0px -214px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.main-page1 .rocket{
+	width: 165px;
+	height: 195px;
+	position: absolute;
+	top: -29px;
+	left: 48px;
+	background: url(../img/rocket.png) no-repeat;
+	
+}
+.main-page1 .thanks{
+	width: 399px;
+	height: 228px;
+	position: absolute;
+	top: 43px;
+	left: 38px;
+	opacity: 0;
+	background: url(../img/thanks.png) no-repeat;
+	
+}
+.main-page1 .withyou{
+	width: 364px;
+	height: 134px;
+	position: absolute;
+	top: 208px;
+	left: 38px;
+	opacity: 0;
+	background: url(../img/withyou.png) no-repeat;
+	
+}
+.main-page1 .miaov{
+	width: 193px;
+	height: 82px;
+	position: absolute;
+	top: -7px;
+	left: 209px;
+	opacity: 0;
+	background: url(../img/miaov.png) no-repeat;
+	
+}
+.arrow{
+	width: 90px;
+	height: 65px;
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	bottom: 40px;
+	background: url(../img/arrow2.png) no-repeat;
+	animation: arrow 1s;
+	-webkit-animation: arrow 1s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+section.start-in .main-page1 .rocket{
+	animation: rocket 1s;
+	-webkit-animation: rocket 1s;
+}
+
+section.start-in .main-page1 .thanks{
+	animation: thanks 1s;
+	-webkit-animation: thanks 1s;
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+section.start-in .main-page1 .withyou{
+	animation: withyou 1s;
+	-webkit-animation: withyou 1s;
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+section.start-in .main-page1 .miaov{
+	animation: miaov 1s;
+	-webkit-animation: miaov 1s;
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+section.start-out .main-page1 .rocket{
+	animation: rocket-out 1s;
+	-webkit-animation: rocket-out 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.bg-game{
+	width: 100%;
+	height: 100%;
+	background: url(../img/star.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+.typeBar{
+	width: 100%;
+	height: 73px;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0px;
+}
+
+.typeBar .score{
+	width: 263px;
+	height: 100%;
+	float: left;
+	background: url(../img/monster4.png) 23px 18px no-repeat;
+	background-size: 59px 51px;
+	text-indent: 82px;
+	line-height: 73px;
+	font-size: 30px;
+	color: #55b9f8;
+}
+
+.typeBar .time{
+	width: 180px;
+	height: 100%;
+	float: left;
+	background: url(../img/time.png) 0px 16px no-repeat;
+	text-indent: 56px;
+	font-size: 30px;
+	color: #ffe400;
+	line-height: 73px;
+}
+
+.wrap{
+	
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

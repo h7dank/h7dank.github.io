@@ -1,0 +1,48 @@
+@keyframes rocket{
+	0%{transform: translate(-150px, 50px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes rocket{
+	0%{-webkit-transform: translate(-150px, 50px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes rocket-out{
+	0%{}
+	100%{transform: translate(200px, -200px); opacity: 0;}
+}
+@-webkit-keyframes rocket-out{
+	0%{}
+	100%{-webkit-transform: translate(200px, -200px); opacity: 0;}
+}
+@keyframes thanks{
+	0%{transform: translate(-150px, 0px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes thanks{
+	0%{-webkit-transform: translate(-150px, 0px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes miaov{
+	0%{-webkit-transform: translate(0px, -100px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes miaov{
+	0%{-webkit-transform: translate(0px, -100px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes withyou{
+	0%{-webkit-transform: translate(0px, 100px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes withyou{
+	0%{-webkit-transform: translate(0px, 100px); opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes arrow{
+	0%{transform: translate(0px, 0px);}
+	100%{transform: translate(0px, -50px);}
+}
+@-webkit-keyframes arrow{
+	0%{-webkit-transform: translate(0px, 0px);}
+	100%{-webkit-transform: translate(0px, -50px);}
+}
