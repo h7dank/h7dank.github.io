@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/> 
+<title>3D变幻相册</title>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('.png_bg');
+</script>
+<![endif]-->
+<link rel="stylesheet" href="./css/style.css"/>
+<script src="js/album.js"></script>
+<script type="text/javascript">
+	var $_B = window.navigator.userAgent.toLowerCase();
+	var oMiaov = document.createElement('script');
+	oMiaov.type = 'text/javascript';
+	oMiaov.src = /chrome|firefox|safari/.test($_B) ? 'js/album_h.js' : 'js/album_l.js';
+	document.getElementsByTagName('head')[0].appendChild(oMiaov);
+</script>
+</head>
+<body>
+
+<div class="main">
+	<div class="section">
+		<div class="font">
+        	<a href="#" target="_blank"><img src="./images/fonts.png" alt="3D图片变幻"/></a>
+        </div>
+        <div class="content">
+        	<div class="cont-bg"></div>
+            <div class="miaov-center">
+            
+            	<div class="floats-box"></div>
+                
+                <ul class="big-ptr" id="picTab">
+                	<li class="active"><a href="#" target="_blank"><img src="images/1.jpg" alt="3D图片变幻"/></a></li>
+                    <li><a href="#" target="_blank"><img src="./images/2.jpg" alt="3D图片变幻"/></a></li>
+                    <li><a href="#" target="_blank"><img src="./images/3.jpg" alt="3D图片变幻"/></a></li>
+                    <li><a href="#" target="_blank"><img src="./images/4.jpg" alt="3D图片变幻"/></a></li>
+                    <li><a href="#" target="_blank"><img src="./images/5.jpg" alt="3D图片变幻"/></a></li>
+                </ul>
+                
+                <dl class="msg-list">
+                	<dt class="bg"></dt>
+                    <dt class="nbr">第<span>1</span>张/共<span>5</span>张</dt>
+                    <dd style="display: block;"><a href="#" target="_blank">埃及金字塔 - 最后的墓穴内法老尸骸在诡异的微笑</a></dd>
+                    <dd><a href="#" target="_blank">悉尼歌剧院 - 最终上演的莫非是短暂的人类文明</a></dd>
+                    <dd><a href="#" target="_blank">日本富士山 - 火山喷发出毁灭天地的岩浆</a></dd>
+                    <dd><a href="#" target="_blank">巴黎艾菲尔铁塔 - 对世界留下这最后一丝温情与浪漫</a></dd>
+                    <dd><a href="#" target="_blank">纽约自由女神像 - 最后一眼对世界的凝望</a></dd>
+                </dl>
+                
+            </div>
+        </div>
+        
+        <div class="pages">
+        	<a href="javascript:void(0);" class="prev btns" id="prevBtn"></a>
+            <span class="dot-list">
+            	<em style="width:12px;" id="scroll_bar"><i></i></em>
+            </span>
+            <a href="javascript:void(0);" class="next btns" id="nextBtn"></a>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
