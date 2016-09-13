@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<meta name="viewport" content="width=100%, initial-scale=1">
+		<link href = "./css/style.css" rel = "stylesheet" type = "text/css" />
+		<link rel = 'stylesheet' href = './css/jquery.pagepiling.css' />
+		<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+		<script src = "./js/jquery.pagepiling.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.wrap').pagepiling({
+					menu: '#menu',
+					anchors: ['introduction', 'skill', 'service', 'education', 'experience', 'expect'],
+					loopTop: true,
+					sectionSelector: '.section',
+					 navigation: {
+						'textColor': '#000',
+						'bulletsColor': '#000',
+						'position': 'left',
+						'tooltips': ['introduction', 'skill', 'service', 'education', 'experience', 'expect']
+					},
+					loopBottom: true
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<ul class = "wrap">
+			<li id = "introduction" class="section">
+				
+					<a id = "selfIco"></a>
+					<h1 id = "title">丁 爽</h1>
+					<p id = "subtitle">既然选择了远方，便只顾风雨兼程</p>
+					<h4>软件开发工程师</h4>
+					<a href = "#" class = "email"><p>dingshuang70@sina.com</p></a>
+				
+			</li>
+			<li id = "skill" class="section">
+				
+				<h1>能力展示</h1>
+				<div class = "row clear">
+					<div class = "col-2 center">
+						<a href = "#" class = "circle-img">
+							<img src = "./images/book.png" />
+						</a>
+					</div>
+					<div class ="col-4">
+						<h2><a href = "http://www.ksat.com" target = "_blank">San Antonio News, Texas News</a></h2>
+						<p>美国门户新闻网站, 前端展示使用Bootstrap JQuery, 后端采用Liferay + SpringMVC + Hibernate</p>
+					</div>
+					<div class = "col-2 center">
+						<a href = "#" class = "circle-img">
+							<img src = "./images/biangua.png" />
+						</a>
+					</div>
+					<div class ="col-4">
+						<h2><a href = "www.ksat.com">3D标签</a></h2>
+						<p>用了CSS3的技术, 可以将文字展示为球体, 圆锥体, 圆柱体等3D图形。</p>
+					</div>
+				</div>
+				<div class = "row clear">
+					<div class = "col-2 center">
+						<a href = "#" class = "circle-img">
+							<img src = "./images/jwebaudio.png" />
+						</a>
+					</div>
+					<div class ="col-4">
+						<h2><a href = "https://github.com/h7dank/h7dank.github.io/tree/master/Shop">100du购物</a></h2>
+						<p>HTML+CSS+JQuery技术实现的一个电商购物网页</p>
+					</div>
+					<div class = "col-2 center">
+						<a href = "#" class = "circle-img">
+							<img src = "./images/zhujianer.png" />
+						</a>
+					</div>
+					<div class ="col-4">
+						<h2><a href = "https://github.com/h7dank/h7dank.github.io/tree/master/game">消灭怪物</a></h2>
+						<p>HTML5+CSS3+Canvas实现的一个手机端游戏</p>
+					</div>
+				</div>
+				<div class = "row clear">
+					<div class = "col-2 center">
+						<a href = "#" class = "circle-img">
+							<img src = "./images/jcorner.png" />
+						</a>
+					</div>
+					<div class ="col-4">
+						<h2><a href = "https://github.com/h7dank/h7dank.github.io/tree/master/3D%20Photo%20Album" target="_blank">3D图片切换</a></h2>
+						<p>HTML5+CSS3 实现的一种3d切换的图形相册</p>
+					</div>
+					<div class = "col-2 center">
+						<a href = "#" class = "circle-img">
+							<img src="images/chrome.png" />
+						</a>
+					</div>
+					<div class ="col-4">
+						<h2><a href = "https://github.com/h7dank/h7dank.github.io/tree/master/Movie">LMovie</a></h2>
+						<p>NodeJS+Express+grunt+bower+Jade+Mongodb实现的一个简单的电影网站</p>
+					</div>
+				</div>
+				
+			</li>
+			<li id = "service" class="section">
+				
+				<h1>擅长技能</h1>
+				<div class = "skilPanel">
+					<div class = "tag">HTML</div>
+					<div class = "tag">CSS</div>
+				</div>
+				<div class = "skilPanel">
+					<div class = "tag">JQuery</div>
+					<div class = "tag">JavaScript</div>
+					<div class = "tag little">Angular</div>
+					<div class = "tag little">Node</div>
+					<div class = "tag little">Liferay</div>
+				</div>
+				<div class = "skilPanel">
+					<div class = "tag">Java</div>
+					<div class = "tag">Jsp</div>
+					<div class = "tag">Spring</div>
+				</div>
+				<div class = "skilPanel">
+					<div class = "tag">MyBatis</div>
+					<div class = "tag">Redis</div>
+				</div>
+					
+				
+			</li>
+			<li id = "education" class="section">
+				
+				<h1>教育背景</h1>
+				<h4>武汉工程大学邮电与信息工程学院</h4>
+				<p>软件工程专业1102级</p>
+				<h4>2015年7月份毕业</h4>
+				<p>毕业论文：Android新闻阅读器开发</p>
+				<strong>获省优秀论文</strong>
+			</li>
+			<li id = "experience" class="section">
+				
+				<h1>个人经历</h1>
+				<h4>2014.5</h4>
+				<h4>参加学校组织的蓝桥杯</h4>
+				<p>获省二等奖</p>
+				<strong>相关技术：数据结构与算法</strong>
+				<h4>2015.03</h4>
+				<p>武汉群硕软件</p>
+				<strong>基于WPF的视频平台开发</strong>
+				<p>相关技术: C#、WPF、Prism、WCF、SQLServer</p>
+				<h4>2015.12</h4>
+				<strong>基于Liferay的新闻网站的开发与维护</strong>
+				<p>相关技术: Liferay、Spring、SpringMVC、JQuery、BootStrap</p>
+
+			</li>
+			<li id = "expect" class="section">
+			
+				<h1>工作意愿<h1>
+				<h4>全栈开发</h4>
+				<p>期待工作地点</p>
+				<strong>武汉</strong>
+				<h4>联系方式</h4>
+				<p>手机: 18827679431</p>
+				<p>QQ: 403677327</p>
+				<p>邮箱: dingshuang70@sina.com</p>
+			</li>
+		</ul>
+	</body>
+</html>
