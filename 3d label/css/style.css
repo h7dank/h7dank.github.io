@@ -1,0 +1,55 @@
+html, body{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+			ul, li{
+				margin: 0;
+				padding: 0;
+			}
+			#sence{
+				width: 400px;
+				height: 400px;
+				margin: 0 auto;
+				transform-style: preserve-3D;
+				-webkit-transform-style: preserve-3D;
+				perspective: 1000px;
+				position: relative;
+				border: 1px solid black;
+			}
+			#box{
+				width: 100%;
+				height: 100%;
+				-webkit-transform-style: preserve-3D;
+				transform-style: preserve-3D;
+					
+			}
+			#ring{
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			#ring li{
+				list-style: none;
+				
+				position: absolute;
+			}
+			#ring li.all{
+				transition: 1s ease 0.1s;
+			}
+			#ring li.one{
+				transition: transform 1s ease 0.1s;
+			}
+			
+			#item{
+				position: relative;
+				width: 400px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			#item p{
+				font: 14px24px 'Microsoft YaHei'；
+				word-break: break-all;
+			}
