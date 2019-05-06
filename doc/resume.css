@@ -1,7 +1,6 @@
 #resume {
     background-color: #fff;
     margin-top: 2.66666667em;
-    /* 40/15 */
     font-size: 15px;
     padding: 10px 10px 20px;
     width: 49%;
@@ -12,6 +11,7 @@
     transform-origin: right;
     -webkit-transform: translateX(98.5%) rotateY(-10deg);
     -webkit-transform-origin: right;
+    overflow: auto;
 }
 
 h1,
@@ -35,7 +35,6 @@ dl dt {
 }
 
 
-/* css for header */
 
 header {
     display: flex;
@@ -56,10 +55,8 @@ address {
 }
 
 
-/* end header */
 
 
-/* css for content */
 
 .content {
     display: flex;
@@ -73,28 +70,22 @@ address {
 
 h2 {
     font-size: 1.33333333em;
-    /* 20/15 */
     padding-bottom: .33333333em;
-    /* 5/15 */
     border-bottom: 1px solid black;
 }
 
 
-/* end content */
 
 .circle {
     width: .53333333em;
     height: .53333333em;
-    /* 8/15 */
     margin: 0 .66666667em;
-    /* 10/15 */
     background: black;
     border-radius: 100%;
     display: inline-block;
 }
 
 
-/* css for education */
 
 .edu-year {
     width: 5.8em;
@@ -104,17 +95,13 @@ h2 {
 .edu-content {
     display: inline-block;
     margin-left: 6.7em;
-    /* (87+10+4-0.5)/15 */
     padding-left: .9em;
-    /* 13.5/15 */
     border-left: .06666667em solid black;
-    /* 1/15 */
 }
 
 .edu-title {
     font-weight: bold;
     margin-bottom: .2em;
-    /* 3/15 */
     display: inline-block;
 }
 
@@ -122,14 +109,9 @@ h2 {
     height: .625em;
     border-left: 1px solid black;
     margin-left: 6.7em;
-    /* (87+10+4-0.5)/15 */
 }
 
 
-/* end education */
-
-
-/* css for project */
 
 .project dl dt {
     margin-bottom: .2em;
@@ -137,18 +119,14 @@ h2 {
 
 .project dl dd {
     margin-left: .26666666em;
-    /* 26666666.5/2 */
     padding-left: .9em;
-    /* 13.5/15 */
     border-left: .06666667em solid black;
-    /* 1px */
 }
 .project .circle {
     margin-left: 0em;
 }
 .project dl dd:first-child {
     padding-top: .66666667em;
-    /* 10/15 */
 }
 .project dl dd:first-child span {
     display: inline-block;
@@ -169,16 +147,12 @@ h2 {
     background: rgb(102, 121, 223);
     color: white;
     padding: .13333333em .33333333em;
-    /* 2px 5px */
     margin: .33333333em 0 .6em;
-    /* 5/15 */
     display: inline-block;
     font-size: .875em;
-    /* 14/16 */
 }
 
 
-/* end project */
 
 .award-item:before,
 .skill-item dd:before,
@@ -186,18 +160,15 @@ h2 {
 .eval-item li:before,
 .project dl dd li:before {
     content: "";
-    background: url('./img/check.png') no-repeat;
+    background: url('../static/check.png') no-repeat;
     background-size: .8em .8em;
-    /* 12/15 */
     display: inline-block;
     width: .8em;
     height: .8em;
     padding-right: .33333333em;
-    /* 5/15 */
 }
 
 
-/* css for skill */
 
 .skill-item dd {
     margin-left: 0;
@@ -205,23 +176,16 @@ h2 {
 
 .skill-item dt {
     margin: .33333333em 0;
-    /* 5/15 */
 }
 
 .skill-item {
     margin-bottom: 1em;
-    /* 15/15 */
 }
 
 .skill-item:last-child {
     margin-bottom: 0;
 }
 
-
-/* end skill */
-
-
-/* css for footer */
 
 footer {
     text-align: center;
@@ -230,7 +194,6 @@ footer {
 }
 
 
-/* end footer */
 @media screen and (min-width: 900px) {
     header {
         justify-content: space-between;
