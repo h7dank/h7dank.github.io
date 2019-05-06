@@ -1,0 +1,105 @@
+/**
+ *
+ * Hi, 我是hank, 一名前端开发工程师
+ *
+ * 哈哈，有一点害羞，不知道该怎么介绍自己
+ *
+ * 干脆我来通过现场代码来展现自己吧~
+ */
+
+/**
+ * 唔，为了不让过程变得生硬，我们先给所有元素加一个过渡动画吧
+ */
+
+ * {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+/**
+ * 现在你还看不出来效果，等会你就知道了
+ *
+ * 先从哪开始呢？让我看看，
+ * 白底黑字太僵硬了，我们先从这开始吧
+ */
+
+html {
+  background: rgb(63, 82, 99);
+}
+
+/***
+ * 还有。。。
+ */
+
+pre, a {
+  color: white;
+}
+
+/**
+ * 这样看起来好多了，对吧~
+ *
+ * 接下来嘛，在这么空的地方写代码，显得怪怪的
+ *
+ * 我们来调整下吧~
+ */
+
+pre:not(:empty) {
+  overflow: auto;
+  background: rgb(48, 48, 48);
+  border: 1px solid #ccc;
+  max-height: 44.6%;
+  width: 49%;
+  font-size: 14px;
+  font-family: monospace;
+  padding: 10px 10px 20px;
+  box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
+  white-space: pre-wrap;
+  outline: 0;
+}
+
+/**
+ * Okay. We're going to start filling up the screen.
+ * Let's get ready to do some work.
+ */
+
+#style-text {
+  -webkit-transform: translateX(95%);
+  position: absolute;
+}
+
+/**
+ * This is good, but all the text is white!
+ * Let's make it even more readable.
+ */
+
+.comment       { color: #857F6B; font-style: italic; }
+.selector      { color: #E69F0F; }
+.selector .key { color: #64D5EA; }
+.key           { color: #64D5EA; }
+.value         { color: #BE84F2; }
+.value.px      { color: #F92772; }
+
+/**
+ * Now we're getting somewhere.
+ * Time to get a little perspective.
+ */
+
+body {
+  -webkit-perspective: 1000px;
+}
+
+#style-text {
+  -webkit-transform: translateX(98.5%) rotateY(-10deg);
+  -webkit-transform-origin: right;
+  max-height: 94.5%;
+}
+
+/**
+ * So, let's talk projects. That's why you're here, right?
+ * I can't imagine you'd come just to see the pretty colors.
+ */
+
+pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg);
+  -webkit-transform-origin: left;
+}
